@@ -7,7 +7,7 @@ import WeatherCard from "./WeatherCard";
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
+    <Typography style={{ margin: "0 auto" }} variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://joesarko.com/">
         Joe Sarko
@@ -19,14 +19,22 @@ function Copyright() {
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          StormySkies ⛈️
-        </Typography>
-        <WeatherCard />
-        <Copyright />
-      </Box>
-    </Container>
+    <>
+      <Container maxWidth="sm">
+        <Box sx={{ my: 4 }}>
+          <Typography
+            style={{ color: "white", textAlign: "center" }}
+            variant="h4"
+            component="h1"
+            gutterBottom
+          >
+            StormySkies ⛈️
+          </Typography>
+
+          <WeatherCard />
+        </Box>
+      </Container>
+      <Copyright style={{ display: "flex", flexDirection: "column" }} />
+    </>
   );
 }
