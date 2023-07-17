@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
 import WeatherCard from "./WeatherCard";
+import styles from "./App.css";
 
 function Copyright() {
   return (
@@ -23,7 +24,14 @@ export default function App() {
       <Container maxWidth="sm">
         <Box sx={{ my: 4 }}>
           <Typography
-            style={{ color: "white", textAlign: "center" }}
+            style={{
+              color: "white",
+              position: "absolute",
+              left: 0,
+              top: 0,
+              padding: "20px",
+              fontFamily: "Pacifico",
+            }}
             variant="h4"
             component="h1"
             gutterBottom

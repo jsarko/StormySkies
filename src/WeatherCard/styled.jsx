@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import styles from "../App.css";
 
 export const Container = styled.div`
   display: flex;
@@ -15,6 +16,7 @@ export const WeatherInfo = styled.p`
   margin-bottom: 10px;
   font-size: 2em;
   line-height: 20px;
+  font-family: "SpaceGrotesk";
 `;
 
 export const WeatherContainer = styled.div`

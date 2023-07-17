@@ -30,6 +30,7 @@ const WeatherCard = () => {
           defaultValue="60189"
           type="tel"
           onChange={handleInputChange}
+          style={{ fontFamily: "SpaceGrotesk" }}
         />
         <label style={{ color: "lightgrey", paddingTop: "10px" }}>{weatherData.city_name}</label>
         <VideoBackground />
