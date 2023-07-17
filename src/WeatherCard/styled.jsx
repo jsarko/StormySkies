@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 75vh;
+  min-height: 87vh;
   overflow: hidden;
 `;
 
@@ -14,8 +14,7 @@ export const WeatherInfo = styled.p`
   color: white;
   text-align: center;
   margin-bottom: 10px;
-  font-size: 2em;
-  line-height: 20px;
+  font-size: 1.5em;
   font-family: "SpaceGrotesk";
 `;
 
@@ -24,4 +23,13 @@ export const WeatherContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
+`;
+
+export const WeatherDesc = styled.h1`
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 6em;
+  font-family: "SpaceGrotesk";
 `;

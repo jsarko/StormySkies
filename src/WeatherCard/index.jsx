@@ -1,7 +1,7 @@
 import React from "react";
 import useWeatherApi from "./useWeatherApi";
 import VideoBackground from "../VideoBackground";
-import { Container, WeatherInfo, WeatherContainer } from "./styled";
+import { Container, WeatherInfo, WeatherContainer, WeatherDesc } from "./styled";
 import TextField from "@mui/material/TextField";
 
 const WeatherCard = () => {
@@ -24,6 +24,13 @@ const WeatherCard = () => {
   return (
     <>
       <Container>
+        <VideoBackground />
+        <WeatherContainer>
+          <WeatherDesc>{weatherData.weather.description}</WeatherDesc>
+          <WeatherInfo>
+            {weatherData.temp}° Farenheight | {weatherData.rh}% Humidity
+          </WeatherInfo>
+        </WeatherContainer>
         <TextField
           id="outlined-helperText"
           label="Zip code"
@@ -33,12 +40,6 @@ const WeatherCard = () => {
           style={{ fontFamily: "SpaceGrotesk" }}
         />
         <label style={{ color: "lightgrey", paddingTop: "10px" }}>{weatherData.city_name}</label>
-        <VideoBackground />
-        <WeatherContainer>
-          <WeatherInfo>{weatherData.weather.description}</WeatherInfo>
-          <WeatherInfo>{weatherData.temp}°</WeatherInfo>
-          <WeatherInfo>{weatherData.rh}% Humidity</WeatherInfo>
-        </WeatherContainer>
       </Container>
     </>
   );
