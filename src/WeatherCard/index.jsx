@@ -31,6 +31,7 @@ const WeatherCard = () => {
             {weatherData.temp}° Farenheight | {weatherData.rh}% Humidity
           </WeatherInfo>
         </WeatherContainer>
+        {/* TODO: Convert to styled-component */}
         <TextField
           id="outlined-helperText"
           label="Zip code"

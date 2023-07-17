@@ -7,6 +7,9 @@ import WeatherCard from "./WeatherCard";
 import styles from "./App.css";
 
 function Copyright() {
+  {
+    /* TODO: Convert to styled-component */
+  }
   return (
     <Typography style={{ margin: "0 auto" }} variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
@@ -22,6 +25,7 @@ export default function App() {
   return (
     <>
       <Container maxWidth="sm">
+        {/* TODO: Convert to styled-component */}
         <Box sx={{ my: 4 }}>
           <Typography
             style={{
